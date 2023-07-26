@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Frontend Developer Interview</title>
+
+</head>
+<body>
+<!-- Contact -->
+    <div class="contact">
+        <div class="contact-box">
+            <div class="left-links">
+                <a class="links selected" ><i class="fa-solid fa-square-phone"></i>087 245 0049/ 01 8137811</a>
+                <a class="links" href="mailto:contact@sample.ie" target="_blank"><i class="fa-solid fa-envelope"></i> contact@sample.ie</a>
+                <a class="links" href="#"><i class="fa-regular fa-clock"></i> Mon-Thu: 8:00 am to 9:00 pm</a>
+                </div>
+                <div class="right-links">
+                <a class="links" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="links" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="links" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+        </div>
+    </div>
+
+<!-- Navbar -->
+    <div class="sticky">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="image/logo.png" alt="">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " >Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Order Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="show" onclick="showFrontLayer();" type="button">Apply for Tax Rebate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >Contact</a>
+                        </li>
+                    </ul>
+                </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<!-- Home section -->
+    <div id="img-background">
+        <div class="home-div">
+            <h1>Take The Right step <br>For Your Business</h1>
+            <p>TAX Associate is a leading consultancy firm that provides
+                <br>simple, effective company registration, and accounting
+                <br>solutions to enterprises in Ireland.</p>
+                <button class="button-91 animate__animated animate__rubberBand " role="button">Get Started</button>
+
+                <!-- Apply -->
+                <div id="bg_mask">
+                    <div id="frontlayer">
+                        <h3>Apply For Tax Rebate Now</h3>
+                        <div class="form-fill">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" value="" name="name">
+                            <label for="mail">Email ID</label>
+                            <input id="mail" type="email" value="" name="mail">
+                            <label for="number">PPS Number</label>
+                            <input id="number" type="text" value="" name="number">
+                        </div>
+                        <div class="tacbox">
+                            <input id="checkbox" type="checkbox" />
+                            <div class="box-label"><label for="checkbox"> I have read & agreed to the authorisation and the <a href="#">terms and conditions</a>.</label></div>
+                        </div>
+                        <div>
+                            <button class="lebal-btn" type="button" value="Hide front layer" onclick="hideFrontLayer();">Apply <i class="fa-solid fa-circle-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-- Grid Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa-regular fa-file-lines animate__animated animate__rotateIn"></i>
+                <h3 class="animate__animated animate__lightSpeedInRight">Start Up Services</h3>
+                <p>We support entrepreneurs to build their
+                    <br> businesses by providing them with the ideal
+                    <br> company formation legal services.</p>
+            </div>
+            <div class="col-sm">
+                <i class="fa-solid fa-users-line animate__animated animate__rotateIn"></i>
+                <h3 class="animate__animated animate__lightSpeedInRight">Finance & Accounting</h3>
+                <p>We provide our clients with the best in the
+                    <br>market, accounting, and financial services to
+                    <br> help accelerate their business growth.</p>
+            </div>
+            <div class="col-sm">
+                <i class="fa-solid fa-shield-halved animate__animated animate__rotateIn"></i>
+                <h3 class="animate__animated animate__lightSpeedInRight">Risk & Assurance</h3>
+                <p>We offer risk and assurance services for new as
+                <br> well as established businesses to help them
+                <br> reduce risks and overcome any disruption.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- js -->
+<script src="script.js"></script>
+
+<!-- Bootstrap Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
